@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 72px;
+
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.color-1 {
+  background-color: #1D1D1D;
+}
+
+.color-2 {
+  background-color: #121212;
+}
+
+.color-3 {
+  background-color: #1E1E1E;
+}
+
+.color-4 {
+  background-color: #7A7A7A;
+}
+
+.custom-height {
+  height: calc(100vh - 48px);
+}
+
+.custom-height-2 {
+  height: 348px;
+}
