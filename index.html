@@ -3,35 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trazip's Portfolio</title>
+  <title>Trazip - Ruby on Rails Developer</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main color-1">
-    <div class="h-screen flex items-center justify-content">
-      <div class="rounded-lg color-2 mx-6 h-96 custom-height flex items-center">
-        <div class="p-6 flex items-center">
-          <div class="w-4/12 flex justify-center items-end">
-            <img class="memoji" src="images/trazip-hey-sticker.png" height="300" width="300">
-          </div>
-          <div class="w-8/12 flex justify-start items-end custom-height-2">
-            <h1 class="headline text-white">Hi, I'm Pierre a Ruby on Rails developer.</h1>
+  <div class="main-color ">
+    <div class="h-full">
+      <div id="introduction-panel" class="h-screen w-screen flex items-center justify-content">
+        <div class="flex items-center justify-center">
+          <div class="p-6 sm:flex sm:justify-center sm:items-center md:block lg:text-left lg:flex lg:space-x-8">
+            <div id="memojis" class="flex justify-center items-center flex-shrink-0 lg:w-1/4">
+              <img id="memoji-1" src="images/trazip-normal-sticker.png" class="h-64 w-64">
+              <img id="memoji-2" src="images/trazip-wink-sticker.png" class="hidden h-64 w-64">
+            </div>
+            <div class="sm:flex sm:items-center md:flex md:items-start lg:w-1/8 lg:flex lg:justify-start lg:items-center">
+              <h1 class="headline text-white text-center sm:text-left md:text-center lg:text-left text-5xl sm:text-6xl">Hi, I'm Pierre, a Ruby on Rails developer.</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="h-screen flex items-center justify-content">
-      <div class="h-96 custom-height flex items-start">
-        <div class="grid grid-cols-3 gap-4 p-6">
-          <div class="col-span-1 rounded-lg color-2 h-96 flex items-center justify-center">
-            <h2 class="text-white">About me</h2>
+      <div class="grid grid-cols-3 gap-4 p-6">
+        <div class="col-span-3 lg:col-span-1 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-xl flex justify-center items-center p-20">
+          <h2 class="text-5xl text-white text-center">About me</h2>
+        </div>
+        <div class="col-span-3 lg:col-span-2 rounded-xl color-1 p-20 flex justify-center items-center">
+          <p class="text-white text-3xl break-words">I am 22 years old. I have a passion for code and web design since I was 13 years old. I was part of the batch #500 at le Wagon bootcamp from october to december 2020 in Paris. </p>
+        </div>
+        <div class="col-span-3 lg:col-span-3 rounded-xl p-20 flex justify-center items-center">
+          <h2 class="text-white text-5xl break-words">My Projects</h2>
+        </div>
+        <div class="col-span-3 lg:col-span-2 rounded-xl color-video pt-10 px-0 flex justify-center items-end">
+          <video autoplay="autoplay" width="800" loop="" muted="">
+              <source src="images/wolfgang.webm" type="video/webm">
+              <source src="images/wolfgang.mp4" type="video/mp4">
+              Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+        <div class="h-full col-span-3 lg:col-span-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl flex flex-col justify-center items-center p-20">
+          <h2 class="text-5xl text-white text-center">Wolfgang</h2>
+          <p class="text-white text-1xl text-center p-6 break-words">A Ruby on Rails webapp build with my team at le Wagon to help musician collaborate and annotate music scores in real time.</p>
+        </div>
+          <div class="h-full col-span-3 lg:col-span-1 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 rounded-xl flex flex-col justify-center items-center p-20">
+            <h2 class="text-5xl text-white text-center">OnePianist</h2>
+            <p class="text-white text-1xl text-center p-6 break-words">A Wordpress website I build to help piano accompanists and students book and manage appointments.</p>
           </div>
-          <div class="col-span-2 rounded-lg color-2 h-96 flex items-center justify-center">
-            <h1 class="text-white">Hi, I'm Pierre a Ruby on Rails developer.</h1>
-          </div>
+        <div class="col-span-3 lg:col-span-2 rounded-xl color-1 p-0 flex justify-center items-center">
+          <img src="images/onepianist-mockup.png" alt="" width="800">
+        </div>
+        <div class="col-span-3 lg:col-span-3 rounded-xl p-20 flex justify-center items-center">
+          <h2 class="text-white text-center text-5xl break-words">My Experiments</h2>
+        </div>
+        <div class="col-span-3 lg:col-span-1 rounded-xl color-video p-20 flex flex-col justify-center items-center">
+          <h2 class="text-5xl text-white text-center">AnimatedGif</h2>
+        </div>
+        <div class="col-span-3 lg:col-span-1 rounded-xl color-video p-20 flex justify-center items-center">
+          <h2 class="text-5xl text-white text-center">Pokebnb</h2>
+        </div>
+        <div class="col-span-3 lg:col-span-1 rounded-xl color-video p-20 flex justify-center items-end">
+          <h2 class="text-5xl text-white text-center">...</h2>
         </div>
       </div>
     </div>

@@ -1,27 +1,23 @@
-*{
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
 }
 
-h1 {
+/*h1 {
   font-size: 72px;
 
 }
 
 h2 {
   font-size: 64px;
+}*/
+
+.main-color {
+  background-color: #121212;
 }
 
 .color-1 {
   background-color: #1D1D1D;
-}
-
-.color-2 {
-  background-color: #121212;
 }
 
 .color-3 {
@@ -32,6 +28,10 @@ h2 {
   background-color: #7A7A7A;
 }
 
+.color-video {
+  background-color: rgb(33,33,33);
+}
+
 .custom-height {
   height: calc(100vh - 48px);
 }
@@ -39,3 +39,4 @@ h2 {
 .custom-height-2 {
   height: 348px;
 }
+
