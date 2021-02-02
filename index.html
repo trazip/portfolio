@@ -12,10 +12,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="main-color">
+<body class="main-color">
+  <div>
     <div class="h-full">
-      <div id="introduction-panel" class="h-screen w-screen flex items-center justify-content">
+      <div id="introduction-panel" class="h-screen w-screen flex items-center justify-content md:mt-32">
         <div class="flex items-center justify-center">
           <div class="p-6 sm:flex sm:justify-center sm:items-center md:block lg:text-left lg:flex lg:space-x-8">
             <div id="memojis" class="flex justify-center items-center flex-shrink-0 lg:w-1/4">
@@ -24,7 +24,7 @@
             </div>
             <div class="flex-col sm:flex sm:items-center md:flex md:items-center lg:w-1/8 lg:flex lg:justify-start lg:items-start">
               <h1 class="headline break-words text-white text-center sm:text-left md:text-center lg:text-left text-5xl sm:text-6xl mb-8">Hi, I'm Pierre, a Ruby on Rails developer.</h1>
-              <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full flex flex-col md:flex-row lg:inline-flex">
+              <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none rounded-full hidden sm:flex sm:flex-col md:flex-row lg:inline-flex md:mb-48 lg:mb-0">
                 <span class="flex rounded-full bg-indigo-400 uppercase px-2 py-1 text-xs font-bold mb-3 md:mr-3 md:mb-0">Technologies</span>
                 <div class="flex justify-around space-x-2 px-3">
                   <svg viewBox="0 0 128 128" class="h-6 w-6">
@@ -61,14 +61,14 @@
         </div>
       </div>
       <div class="grid grid-cols-3 gap-4 p-6">
-        <div class="srcol col-span-3 lg:col-span-1 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-xl flex justify-center items-center p-20">
-          <h2 class="text-5xl text-white text-center">About me</h2>
+        <div class="srcol col-span-3 lg:col-span-1 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-xl flex justify-center items-center p-5">
+          <h2 class="text-2xl sm:text-5xl text-white text-center">About me</h2>
         </div>
-        <div class="srcol col-span-3 lg:col-span-2 rounded-xl color-1 p-20 flex justify-center items-center">
-          <p class="text-white text-3xl break-words">I am 22 years old. I have a passion for code and web design since I was 13 years old. I was part of the batch #500 at le Wagon bootcamp from october to december 2020 in Paris. </p>
+        <div class="srcol col-span-3 lg:col-span-2 rounded-xl color-1 p-3 sm:p-20 flex justify-center items-center">
+          <p class="text-white text-md sm:text-3xl break-words">I am 22 years old. I have a passion for code and web design since I was 13 years old. I was part of the batch #500 at le Wagon bootcamp from october to december 2020 in Paris. </p>
         </div>
         <div class="srcol col-span-3 lg:col-span-3 rounded-xl p-20 flex justify-center items-center">
-          <h2 class="text-white text-5xl break-words">My Projects</h2>
+          <h2 class="text-white text-center text-4xl md:text-5xl break-words">My Projects</h2>
         </div>
         <div class="srcol col-span-3 lg:col-span-2 rounded-xl color-video pt-10 px-0 flex justify-center items-end">
           <video autoplay="autoplay" width="800" loop="" muted="">
@@ -77,29 +77,29 @@
               Sorry, your browser doesn't support embedded videos.
           </video>
         </div>
-        <div class="srcol h-full col-span-3 lg:col-span-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl flex flex-col justify-center items-center p-20">
-          <a href="http://www.getwolfgang.com/" class="text-5xl text-white text-center">Wolfgang</a>
-          <p class="text-white text-1xl text-center p-6 break-words">A Ruby on Rails webapp build with my team at le Wagon to help musician collaborate and annotate music scores in real time.</p>
+        <div class="srcol h-full col-span-3 lg:col-span-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl flex flex-col justify-center items-center p-5 sm:p-20">
+          <a href="http://www.getwolfgang.com/" class="text-2xl sm:text-5xl text-white text-center">Wolfgang</a>
+          <p class="text-white text-sm sm:text-1xl text-center p-3 break-words">A Ruby on Rails webapp build with my team at le Wagon to help musician collaborate and annotate music scores in real time.</p>
         </div>
-          <div class="srcol h-full col-span-3 lg:col-span-1 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 rounded-xl flex flex-col justify-center items-center p-20">
-            <a href="https://onepianist.com" class="text-5xl text-white text-center">OnePianist</a>
-            <p class="text-white text-1xl text-center p-6 break-words">A Wordpress website I build to help piano accompanists and students book and manage appointments.</p>
+          <div class="srcol h-full col-span-3 lg:col-span-1 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 rounded-xl flex flex-col justify-center items-center p-5 sm:p-20">
+            <a href="https://onepianist.com" class="text-2xl sm:text-5xl text-white text-center">OnePianist</a>
+            <p class="text-white text-sm sm:text-1xl text-center p-3 break-words">A Wordpress website I build to help piano accompanists and students book and manage appointments.</p>
           </div>
         <div class="srcol col-span-3 lg:col-span-2 rounded-xl color-1 p-0 flex justify-center items-center">
           <img src="images/onepianist-mockup.png" alt="onepianist-landing-page-mockup" width="800">
         </div>
         <div class="srcol col-span-3 lg:col-span-3 rounded-xl p-20 flex justify-center items-center">
-          <h2 class="text-white text-center text-5xl">My Experiments</h2>
+          <h2 class="text-white text-center text-4xl md:text-5xl">My Experiments</h2>
         </div>
-        <div class="srcol col-span-3 lg:col-span-1 rounded-xl color-video p-10 flex">
-          <span class="flex justify-self-start self-start rounded-full bg-gradient-to-r from-yellow-400 to-red-500 uppercase px-2 py-1 text-sm text-white font-bold mr-4">Solo</span>
-          <a href="https://trazip-animatedgif.herokuapp.com/" class="text-5xl text-white text-center justify-self-center self-center">AnimatedGif</a>
+        <div class="srcol col-span-3 flex-col lg:col-span-1 rounded-xl color-video p-10 flex">
+          <span class="flex self-center justify-self-start sm:justify-self-start sm:self-start rounded-full bg-gradient-to-r from-yellow-400 to-red-500 uppercase px-2 py-1 text-xs text-white font-bold mb-5 sm:mb-0 sm:mr-4 lg:mb-3 ">Solo</span>
+          <a href="https://trazip-animatedgif.herokuapp.com/" class="text-3xl sm:text-5xl text-white text-center justify-self-center self-center break-words">AnimatedGif</a>
         </div>
-        <div class="srcol col-span-3 lg:col-span-1 rounded-xl color-video p-10 flex">
-          <span class="flex justify-self-start self-start rounded-full le-wagon-color uppercase px-2 py-1 text-sm text-white font-bold mr-4">Le Wagon</span>
-          <a href="https://pokebnb-gael1130.herokuapp.com/" class="text-5xl text-white text-center justify-self-center self-center">Pokebnb</a>
+        <div class="srcol col-span-3 flex-col lg:col-span-1 rounded-xl color-video p-10 flex">
+          <span class="flex self-center justify-self-start sm:justify-self-start sm:self-start rounded-full le-wagon-color uppercase px-2 py-1 text-xs text-white font-bold mb-5 sm:mb-0 sm:mr-4 lg:mb-3 flex-shrink-0">Le Wagon</span>
+          <a href="https://pokebnb-gael1130.herokuapp.com/" class="text-3xl sm:text-5xl text-white text-center justify-self-center self-center break-words">Pokebnb</a>
         </div>
-        <div class="srcol col-span-3 lg:col-span-1 rounded-xl color-video p-10 flex justify-center items-end">
+        <div class="srcol col-span-3 lg:col-span-1 rounded-xl color-video p-10 flex justify-center items-center">
           <h2 class="text-5xl text-white text-center">...</h2>
         </div>
       </div>
