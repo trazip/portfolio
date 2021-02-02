@@ -3,15 +3,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: 700;
 }
 
-/*h1 {
-  font-size: 72px;
-
-}
-
-h2 {
-  font-size: 64px;
-}*/
-
 .main-color {
   background-color: #121212;
 }
@@ -38,5 +29,9 @@ h2 {
 
 .custom-height-2 {
   height: 348px;
+}
+
+.le-wagon-color {
+  background-color: #FC1317
 }
 

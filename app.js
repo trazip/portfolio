@@ -1,9 +1,17 @@
-ScrollReveal().reveal('#introduction-panel', {
+const sr = ScrollReveal();
+
+sr.reveal('#introduction-panel', {
   delay: '300',
   duration: '600',
   easing: 'ease-out',
   distance: '50px'
 });
+
+
+sr.reveal('.srcol', {
+  interval: 300,
+  reset: true
+})
 
 const memojis = document.getElementById("memojis")
 
