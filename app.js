@@ -1,5 +1,17 @@
 const sr = ScrollReveal();
-const memojis = document.getElementById("memojis")
+const memojis = document.getElementById("memojis");
+const firstMemoji = document.getElementById("memoji-1");
+const secondMemoji = document.getElementById("memoji-2");
+setInterval(wink, 3000)
+
+function wink() {
+  firstMemoji.classList.toggle('hidden');
+  secondMemoji.classList.toggle('hidden');
+  setTimeout(function(){
+    firstMemoji.classList.toggle('hidden');
+    secondMemoji.classList.toggle('hidden');
+  }, 80)
+}
 
 sr.reveal('#introduction-panel', {
   delay: '300',
@@ -13,36 +25,3 @@ sr.reveal('.srcol', {
   interval: 300,
   reset: true
 })
-
-setTimeout(function(){
-  if (memojis) {
-    const firstItem = document.getElementById("memoji-1");
-    const secondItem = document.getElementById("memoji-2");
-    firstItem.classList.toggle('hidden');
-    secondItem.classList.toggle('hidden');
-  }
-}, 1000);
-
-setTimeout(function(){
-  if (memojis) {
-    const firstItem = document.getElementById("memoji-1");
-    const secondItem = document.getElementById("memoji-2");
-    firstItem.classList.toggle('hidden');
-    secondItem.classList.toggle('hidden');
-  }
-}, 1200);
-
-if (memojis) {
-  const firstItem = document.getElementById("memoji-1");
-  const secondItem = document.getElementById("memoji-2");
-
-  memojis.addEventListener('mouseenter', () => {
-    firstItem.classList.toggle('hidden');
-    secondItem.classList.toggle('hidden');
-  })
-
-  memojis.addEventListener('mouseleave', () => {
-    firstItem.classList.toggle('hidden');
-    secondItem.classList.toggle('hidden');
-  })
-}
