@@ -1,4 +1,5 @@
 const sr = ScrollReveal();
+const memojis = document.getElementById("memojis")
 
 sr.reveal('#introduction-panel', {
   delay: '300',
@@ -12,8 +13,6 @@ sr.reveal('.srcol', {
   interval: 300,
   reset: true
 })
-
-const memojis = document.getElementById("memojis")
 
 setTimeout(function(){
   if (memojis) {
