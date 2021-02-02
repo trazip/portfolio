@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.headline', {
+ScrollReveal().reveal('#introduction-panel', {
   delay: '300',
   duration: '600',
   easing: 'ease-out',
